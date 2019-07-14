@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>tsqm - Twitter Split-Query Maker</title>
+  <meta charset="UTF-8">
+
+  <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./lib/moment.js"></script>
+
+  <script type="text/javascript" src="./modules.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <div id="area_input">
+    <ul>
+      <li>id __ <input id="input_id" type="text"></li>
+      <li>since <input id="input_since" type="text"></li>
+      <li>until <input id="input_until" type="text"></li>
+      <li>unit_
+        <select id="select_split_unit">
+          <option value="days">Day</option>
+          <option value="weeks">Week</option>
+          <option value="months">Month</option>
+        </select>
+      </li>
+    </ul>
+  </div>
+  <div id="area_action">
+    <button id="button_go">Go</button>
+  </div>
+  <div id="area_output">
+    <ul id="area_output_parent">
+    </ul>
+  </div>
+</body>
+</html>
